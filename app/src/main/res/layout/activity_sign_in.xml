@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.bdtravelblog.www.travelhub.Activity.SignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGO"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/signInEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="60dp"
+        android:hint="Email address"
+        android:padding="20dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/input_field"/>
+    <EditText
+        android:id="@+id/signInPw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:hint="password"
+        android:padding="20dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/input_field"/>
+
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/yellow_button"
+        android:text="LOG IN"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorButtom"
+            android:text="Forgot Password?"
+            android:textAlignment="center"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/signInGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

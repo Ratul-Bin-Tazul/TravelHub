@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "924880462938",
+    "firebase_url": "https://travel-hub-8cb4d.firebaseio.com",
+    "project_id": "travel-hub-8cb4d",
+    "storage_bucket": "travel-hub-8cb4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924880462938:android:9cdfed5b9d8f34f8",
+        "android_client_info": {
+          "package_name": "com.bdtravelblog.www.travelhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924880462938-a025m1759vnng8a4eiedpln0pji757v4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bdtravelblog.www.travelhub",
+            "certificate_hash": "dff0b4f509056454c5b7494eaa0aa17ec7565891"
+          }
+        },
+        {
+          "client_id": "924880462938-k1t4mp2aqrfpf59dp31ktdenn6etc5he.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEdMiKs-gQasJXZHsJ2aM1vA6_PRISalE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924880462938-k1t4mp2aqrfpf59dp31ktdenn6etc5he.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

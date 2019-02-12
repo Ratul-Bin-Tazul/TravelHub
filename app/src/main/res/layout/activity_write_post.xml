@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bdtravelblog.www.travelhub.Activity.WritePostActivity">
+
+    <RelativeLayout
+        android:id="@+id/postWriteHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/writePostProPic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="@color/colorPrimary"
+            android:background="@color/fui_transparent"
+            android:src="@drawable/ic_account_circle_grey600_48dp"/>
+
+        <TextView
+            android:id="@+id/writePostUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:layout_alignRight="@+id/writePostProPic"
+            android:layout_alignEnd="@+id/writePostProPic"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+        <ImageButton
+            android:id="@+id/writePostImagePickerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_camera_grey600_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:paddingTop="10dp"
+            android:background="@color/fui_transparent"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postWriteHeading">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+    <EditText
+        android:id="@+id/writePostStory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write your story..."
+        android:inputType="textMultiLine"
+        android:paddingLeft="25dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="260dp"
+        android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+    </ScrollView>
+    <!--BOTTOM LAYOUT TO HOLD SETTING AND IMAGES-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <!--IMAGE CARD-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/writePostImageCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp">
+        <LinearLayout
+            android:id="@+id/writePostImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+        <!--SETTING CARD-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/writePostBottomCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp">
+    <RelativeLayout
+        android:id="@+id/writePostPicLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageButton
+            android:id="@+id/writePostSettingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_settings_grey600_24dp"
+            android:background="@color/fui_transparent"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/writePostPostButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

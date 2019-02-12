@@ -1,0 +1,60 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeTransparent" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="GreenTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Required for sign-in flow styling -->
+        <!--<inamename="colorPrimary">@color/material_green_500</item>-->
+        <!--<inamename="colorPrimaryDark">@color/material_green_700</item>-->
+        <!--<inamename="colorAccent">@color/material_purple_a700</item>-->
+
+        <item name="colorControlNormal">@color/material_green_500</item>
+        <!--<inamename="colorControlActivated">@color/material_lime_a700</item>-->
+        <!--<inamename="colorControlHighlight">@color/material_green_a200</item>-->
+        <item name="android:windowBackground">@color/colorPrimary</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="ProfilePicture" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:background">@drawable/profile_pic_circle</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--<stnamename="SplashTheme" parent="AppTheme">-->
+        <!--<inamename="android:windowBackground">@drawable/splash</item>-->
+    <!--</style>-->
+
+    <style name="SplashTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="divider">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#fefefe</item>
+    </style>
+
+</resources>

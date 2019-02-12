@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profilePictureImageBtn"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_add_white_24dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/profile_pic_circle"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/signUpProfileFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:hint="Full Name"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/input_field"/>
+
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/signUpProfileCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ccp_showFullName="true"
+            app:ccp_showPhoneCode="false"
+            app:ccp_showNameCode="false"
+            android:background="@drawable/input_field"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/input_field"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/signUpProfilePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/editText_carrierNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:background="@drawable/input_field"
+                android:hint="phone"
+                android:textColor="#000"
+                android:inputType="phone"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/signUpProfileCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginTop="20dp"
+            android:hint="City"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/input_field"/>
+
+        <Button
+            android:id="@+id/signUpProfileFinishBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/yellow_button"
+            android:layout_alignParentBottom="true"
+            android:textColor="#fff"
+            android:text="Start Exploring"/>
+
+        <!--&lt;!&ndash; Image Cropper fill the remaining available height &ndash;&gt;-->
+        <!--<com.theartofdev.edmodo.cropper.CropImageView-->
+            <!--xmlns:custom="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/cropImageView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:visibility="gone"/>-->
+    </LinearLayout>
+</ScrollView>

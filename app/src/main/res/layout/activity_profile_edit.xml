@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bdtravelblog.www.travelhub.Activity.ProfileEditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/profileEditCover"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="center"
+                android:src="@drawable/cover_template" />
+
+            <Button
+                android:id="@+id/profileEditChangeCover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Cover Photo"
+                android:textColor="#fff"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-40dp">
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/profileEditProfilePicture"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_account_circle_grey600_24dp" />
+
+            <Button
+                android:id="@+id/profileEditChangeProfilePicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Profile Photo"
+                android:textColor="#fff"
+                android:layout_below="@+id/profileEditProfilePicture"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/profileEditUsernameIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_account_edit_grey600_24dp"/>
+
+            <EditText
+                android:id="@+id/profileEditUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:inputType="textShortMessage"
+                android:layout_toRightOf="@+id/profileEditUsernameIcon"
+                android:hint="Username"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/profileEditOneLineIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_account_edit_grey600_24dp"/>
+
+            <EditText
+                android:id="@+id/profileEditOneLineAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:inputType="textShortMessage"
+                android:layout_toRightOf="@+id/profileEditOneLineIcon"
+                android:hint="One line that best describes you"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/profileEditAboutIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_account_edit_grey600_24dp"/>
+
+            <EditText
+                android:id="@+id/profileEditAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:inputType="textShortMessage"
+                android:layout_toRightOf="@+id/profileEditAboutIcon"
+                android:hint="Tell a bit more about yourself"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/profileEditEmailIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_account_edit_grey600_24dp"/>
+
+            <EditText
+                android:id="@+id/profileEditEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:inputType="textEmailAddress"
+                android:layout_toRightOf="@+id/profileEditEmailIcon"
+                android:hint="Email"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/profileEditPhoneIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_phone_grey600_24dp"/>
+
+            <EditText
+                android:id="@+id/profileEditPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:inputType="phone"
+                android:layout_toRightOf="@+id/profileEditPhoneIcon"
+                android:hint="Phone number"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/profileEditLocationIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_account_edit_grey600_24dp"/>
+
+            <EditText
+                android:id="@+id/profileEditLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/profileEditLocationIcon"
+                android:hint="Location"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/profileEditAddressIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_account_edit_grey600_24dp"/>
+
+            <EditText
+                android:id="@+id/profileEditAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/profileEditAddressIcon"
+                android:hint="Address"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/profileEditSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:layout_margin="10dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
